@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POKéDEX</title>
+    <link rel="shortcut icon" href="..\images\pokeballGameBoy.png" type="image/x-icon">
+    <link rel="stylesheet" href="..\css\index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+  </head>
+  </head>
+  <body>
+
+    <div id="wallpaper-div"></div>
+
+  <div id="top-container">
+    <img src="..\images\pokemon_logo.png" alt="logo" id="logo" draggable="false">
+    <div id="search-bar-container">
+      <input type="text" name="searchBar" id="search-bar" placeholder="Search...">
+    </div>
+  </div>
+
+  <div id="list-container">
+    <div id="list">
+    </div>
+  </div>
+
+  <div id="deep"></div>
+  
+  <div id="navbar-container">
+    <div class="navbar">
+      <div class="navbar-item" onclick="window.location.href='#deep'">
+        <i class="fi fi-rr-arrow-small-down"></i>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="navbar-item" onclick="navbarSelect(0)">
+        <i class="fi fi-sr-home" id="home-item"></i>
+      </div>
+      <div class="navbar-item" onclick="navbarSelect(1)">
+        <i class="fi fi-rr-marker" id="marker-item"></i>
+      </div>
+      <div class="navbar-item" onclick="window.location.href='register.php'">
+        <i class="fi fi-rr-user"></i>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="navbar-item" onclick="window.location.href='#top-container'">
+        <i class="fi fi-rr-arrow-small-up"></i>
+      </div>
+    </div>
+  </div>
+
+    <script src="..\js\index.js"></script>
+  </body>
+</html> 
